@@ -366,7 +366,7 @@ body {
   align-items: center;
 }
 .logo-box .container .logo-ipsum img {
-  width: 50px;
+  width: 35px;
 }
 .logo-box .container .logo-ipsum span {
   font-size: 1.5rem;
@@ -448,6 +448,12 @@ right: 20px;
  font-size: 3rem;
  text-align: center;
  margin: 50px 0px;
+  }
+  
+  .logo-box .container{
+  
+    flex-direction: column;
+    align-items: center;
   }
  
  
@@ -717,6 +723,18 @@ right: 20px;
       flex-direction: column;
       align-items: center;
     }
+    .business .container .img-box .img{
+      min-width: 300px;
+    padding: 0 5px;
+    }
+    .business .container .img-box .img span::before,
+    .business .container .img-box .img span::after{
+      display: none;
+    }
+    .business .container .img-box .img .inner-box{
+      position: static;
+      width: 100%;
+    }
     .business .img-box .inner-text{
       min-width: 80%;
       margin-top: 15% ;
@@ -981,14 +999,16 @@ right: 20px;
 
 .our-services .container .grid-card {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
   justify-items: center;
+
+
 }
 
 .our-services .container .card-content {
-  width: 350px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   padding: 20px;
   border: 1px solid;
   display: flex;
@@ -1375,7 +1395,7 @@ justify-content: space-around;
   }
 
   footer .openday .container .day-time .email input[type=email]{
-    width: 370px;
+    max-width: 270px;
   }
   footer .openday .container .day-time .d-flex{
     margin-bottom: 15px;
@@ -1400,6 +1420,10 @@ flex-wrap: wrap;
 justify-content: space-around;
 
   }
+  footer .openday .container .day-time .email input[type=email]{
+    width: 370px;
+  }
+
   footer .openday .container .day-time .d-flex{
     margin-bottom: 15px;
   } 
