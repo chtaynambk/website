@@ -1347,10 +1347,16 @@ footer .container .line{
   position: absolute;
   width: 86%;
   height: 1px;
-  bottom: 60px;
+  bottom: 30px;
   background-color: var(--main-color-alt);
 }
-
+footer .container .line::before{
+  content: "copyright © - islem chtayna";
+  color: var(--main-color-alt);
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+}
 
 
 
@@ -1367,7 +1373,7 @@ footer .container .line{
 
   }
   footer .openday .container .day-time .email input[type=email]{
-    width: 550px;
+    width: 100%;
   }
   footer .openday .container .day-time .d-flex{
     margin-bottom: 15px;
@@ -1395,7 +1401,7 @@ justify-content: space-around;
   }
 
   footer .openday .container .day-time .email input[type=email]{
-    max-width: 270px;
+    max-width: 100%;
   }
   footer .openday .container .day-time .d-flex{
     margin-bottom: 15px;
@@ -1413,7 +1419,7 @@ justify-content: space-around;
     min-height: 700px;
   }
   footer .openday{
-    height: 200px;
+    height: 250px;
   }
   footer .openday .container .day-time{
 flex-wrap: wrap;
@@ -1421,7 +1427,7 @@ justify-content: space-around;
 
   }
   footer .openday .container .day-time .email input[type=email]{
-    width: 370px;
+    width: 100%;
   }
 
   footer .openday .container .day-time .d-flex{
@@ -1433,5 +1439,11 @@ justify-content: space-around;
   }
   footer .all-cont .smedia{
     grid-area: 1/1/1/4;
+  }
+  footer .all-cont .quick-l,
+  footer .all-cont .usefull-l,
+  footer .all-cont .site-po{
+    font-size: 1rem;
+    margin-top: 50px;
   }
 }
